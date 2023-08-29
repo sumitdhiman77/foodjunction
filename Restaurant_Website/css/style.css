@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Poppins:wght@100;300;400;500;600;700&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+/* **************************   NAVBAR STYLING   ***************************** */
+.navbar {
+  box-shadow: 0px 5px 10px 0px #aaa;
+  position: fixed;
+  width: 100%;
+  opacity: 0.85;
+  color: #000;
+  background: #fff;
+  z-index: 999;
+}
+.container {
+  max-width: 1000px;
+  width: 90%;
+  margin: auto;
+}
+.navbar-brand {
+  font-size: 3rem;
+}
+.navbar-collapse {
+  justify-content: flex-end;
+}
+.navbar .nav-item a {
+  margin-left: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  transition: all 2s ease-in-out;
+}
+.navbar .nav-item a:hover {
+  color: #117964;
+}
+/* ************************  SHOWCASE STYLING  ********************************/
+.showcase {
+  height: 50vh;
+  background: url("/images/header-image2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.showcase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.showcase h1 {
+  text-transform: uppercase;
+}
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+  border-radius: 50px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 1em 2.5em;
+  margin-top: 1em;
+  border: none;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #16b491;
+  transition: all 2s ease-in-out;
+}
+.btn-primary:hover {
+  background: #10866c;
+}
+/* *********************************  ABOUT STYLING   *********************** */
+#about {
+  padding: 50px 0;
+  background: #f5f5f7;
+}
+.about-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-image {
+  flex: 1 1 400px;
+  padding: 30px;
+  transform: translateX(150%);
+  animation: about-image-animation 1s ease-in-out forwards;
+}
+@keyframes about-image-animation {
+  100% {
+    transform: translateX(0);
+  }
+}
+.about-text {
+  margin: auto;
+  flex: 1 1 400px;
+  padding: 30px;
+  transform: translateX(-150%);
+  animation: about-text-animation 1s ease-in-out forwards;
+}
+@keyframes about-text-animation {
+  100% {
+    transform: translateX(0);
+  }
+}
+.about-text h2 {
+  font-size: 2.5rem;
+}
+.about-text p {
+  font-size: 1.2rem;
+  color: #555;
+}
+.about-text .small {
+  font-weight: 600;
+  color: #666;
+  font-weight: 1.6rem;
+}
+
+.about-image img {
+  display: block;
+  width: 400px;
+  max-width: 100%;
+  margin: auto;
+  object-fit: cover;
+  object-position: right;
+}
+/* *****************   Food Types   ********************************** */
+#food {
+  padding: 5rem 0 10rem 0;
+}
+#food h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #555;
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 4rem;
+}
+.types-of-food {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-container {
+  margin: 0 1rem;
+  position: relative;
+  max-width: 100%;
+}
+.img-container img {
+  margin: auto;
+  max-width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+.img-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.871);
+  overflow: hidden;
+  max-width: 40rem;
+  height: 0;
+  transition: 0.5s ease;
+  margin: auto;
+}
+.img-container:hover .img-content {
+  height: 100%;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text h3 {
+  font-size: 3rem;
+  color: #fff;
+  font-size: 3rem;
+}
+.text a {
+  font-size: 1.2rem;
+}
+/* ****************************  Food Menu   ********************************* */
+.food-menu h2 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 400;
+  color: #666;
+}
+.food-menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0 30px 0;
+}
+.food-menu-item {
+  display: flex;
+  flex: 1 1 500px;
+  margin-bottom: 3rem;
+  justify-content: space-evenly;
+}
+.food-menu-image img {
+  display: block;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+.food-menu-description {
+  margin: auto 1.5rem;
+  text-align: center;
+}
+.food-menu-description h2 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #444;
+}
+.food-menu-description p {
+  font-size: 1.4rem;
+  color: #555;
+  font-weight: 500;
+}
+.food-menu-description .price {
+  color: #117964;
+  font-weight: 700;
+}
+/* ************************  Testimonial  **************************** */
+.testimonial {
+  background: #fbfbfb;
+  padding: 4rem;
+}
+.feedback {
+  display: flex;
+  justify-content: space-between;
+}
+.testimonial h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 400;
+  color: #555;
+  text-align: center;
+}
+.coustomer {
+  text-align: center;
+  margin-top: 2rem;
+}
+.coustomer span {
+  margin-bottom: 1rem;
+  display: inline-block;
+  color: gold;
+}
+.coustomer p {
+  font-size: 1.4rem;
+  color: #555;
+  font-weight: 500;
+}
+.coustomer img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  margin: auto;
+}
+/* **********************  Contact  ****************** */
+#contact {
+  background: rgb(226, 226, 226);
+  padding: 5rem 0;
+}
+.contact-wrapper {
+  display: flex;
+  background: #fff;
+  padding-left: 0;
+}
+.contact-image {
+  width: 50%;
+}
+.contact-image img {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  max-width: 100%;
+  height: 417px;
+}
+.contact-form {
+  width: 50%;
+  padding: 1rem;
+  margin: auto;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  display: block;
+  padding: 1rem 0;
+  color: #444;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  outline: none;
+  box-shadow: none;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.contact-form h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  color: #444;
+  margin-bottom: 1rem;
+}
+.contact-form a {
+  font-size: 1.2rem;
+}
+/* **********************  Footer   ************************* */
+.footer h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 3rem;
+  font-weight: 500;
+  color: #fff;
+  background: rgb(65, 65, 65);
+}

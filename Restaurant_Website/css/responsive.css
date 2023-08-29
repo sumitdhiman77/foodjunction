@@ -1,0 +1,50 @@
+@media (max-width: 768px) {
+  .types-of-food {
+    flex-direction: column;
+  }
+  .food-type:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+  .img-container img {
+    box-shadow: 5px 5px 10px 0px #aaa;
+  }
+  .feedback {
+    flex-direction: column;
+  }
+  .contact-wrapper {
+    flex-direction: column;
+    padding: 0;
+  }
+  .contact-form,
+  .contact-image {
+    width: 100%;
+  }
+  .contact-image img {
+    height: 423px;
+  }
+}
+/* ************   For Mobile   ********************* */
+@media (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+  .food-menu-image img {
+    margin: auto;
+  }
+  .food-menu-item {
+    flex-direction: column;
+  }
+  .contact-image {
+    width: 90%;
+    margin: 3rem auto;
+  }
+  .contact-image img {
+    height: 320px;
+  }
+}
+/* ############ Landscape Mode  ######################### */
+@media (orientation: landscape) and (max-height: 500px) {
+  .showcase-container {
+    height: 50vmax;
+  }
+}
