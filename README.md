@@ -1,2 +1,2 @@
 # foodjunction
-this is a restaurant based application
+This is a restaurant based application
